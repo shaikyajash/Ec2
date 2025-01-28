@@ -26,7 +26,7 @@ connection.connect(err => {
 
 // Define a route to fetch data
 app.get('/fetch-data', (req, res) => {
-    const query = 'SELECT * FROM your_table'; // Replace 'your_table' with your actual table name
+    const query = 'SELECT * FROM Node'; // Replace 'your_table' with your actual table name
     connection.query(query, (err, results) => {
         if (err) {
             console.error('Error fetching data:', err.message);
