@@ -6,10 +6,10 @@ const PORT = process.env.PORT || 3000;
 
 // Database connection configuration
 const dbConfig = {
-    host: 'your-rds-endpoint',    // RDS Endpoint or localhost
-    user: 'your_user',            // MySQL username
-    password: 'your_password',    // MySQL password
-    database: 'your_database',    // Database name
+    host: 'database-2.c98u6iueeylk.us-east-1.rds.amazonaws.com',    // RDS Endpoint or localhost
+    user: 'admin',            // MySQL username
+    password: 'RamanGoyal1',    // MySQL password
+    database: 'database-2',    // Database name
 };
 
 // Create a MySQL connection
@@ -18,7 +18,7 @@ const connection = mysql.createConnection(dbConfig);
 // Connect to the database
 connection.connect(err => {
     if (err) {
-        console.error('Error connecting to the database:', err.message);
+        console.error('Error connecting to the database: ', err.message);
         process.exit(1); // Exit the app if there's a connection error
     }
     console.log('Connected to the MySQL database.');
