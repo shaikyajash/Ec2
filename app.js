@@ -9,7 +9,7 @@ const dbConfig = {
     host: 'database-2.c98u6iueeylk.us-east-1.rds.amazonaws.com',    // RDS Endpoint or localhost
     user: 'admin',            // MySQL username
     password: 'RamanGoyal1',    // MySQL password
-    database: 'database-2',    // Database name
+    database: 'database2',    // Database name
 };
 
 // Create a MySQL connection
