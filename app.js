@@ -30,7 +30,7 @@ app.get('/fetch-data', (req, res) => {
     connection.query(query, (err, results) => {
         if (err) {
             console.error('Error fetching data:', err.message);
-            return res.status(500).json({ error: 'Failed to fetch data' });
+            return res.status(500).json({ error: 'Failed to fetch data hiii' });
         }
         res.json(results);
     });
